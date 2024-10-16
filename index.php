@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 include("conexionBD/conexion.php")
 
 //include("php/dbconnect.php");
@@ -100,3 +101,23 @@ include("header.php");
 
 </body>
 </html>
+=======
+
+//APP
+include_once 'App/crearMVCX.php';
+include_once 'App/vistasMVCX.php';
+include_once 'App/funciones.php';
+
+
+// Controladores
+include_once "Controllers/templateCtr.php";
+include_once "Controllers/rutaCtr.php";
+include_once "Controllers/loginCtr.php";
+
+// Modelos
+include_once "Models/loginMdl.php";
+
+
+$template = new Template();
+$template->templateCtr();
+>>>>>>> 0949d59a1d473143a33bcade5b41a2df253407f5
