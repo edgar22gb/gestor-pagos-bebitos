@@ -62,7 +62,7 @@
                       </g>
                     </svg>
                   </span>
-                  <span class="app-brand-text demo text-body fw-bolder">Mi framework</span>
+                  <span class="app-brand-text demo text-body fw-bolder">Estancia Bebitos</span>
                 </a>
               </div>
               <!-- /Logo -->
