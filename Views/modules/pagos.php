@@ -16,19 +16,19 @@
    
 
   <label for="">Clave de Alumno</label>
-<!--TOMAR LOS VALORES DE LA CONSULTA A LA TABLA GRADOS-->
+<!--TOMAR LOS VALORES DE LA CONSULTA A LA TABLA ALUMNOS-->
   <select name="id_alummno" id="" class="form-control mt-3">
   </select>
 
   <label for="">Monto de pago</label>
-  <!---TOMAR LOS VALORES DE LA CONSULTA A LA TABLA NIVELES-->
-  <input type="text" class="form-control mt-3" name="monto_pago">
+  
+  <input type="text" class="form-control mt-3" name="monto_pago" placeholder="Monto de pago">
 
   <label for="">Mes de pago</label>
   <input type="date" class="form-control mt-3" name="mes_pago" id="">
 
   <label for="">Concepto de pago</label>
-  <textarea name="concepto" id="" cols="30" class="form-control mt-3" ></textarea>
+  <textarea name="concepto" id="" cols="30" class="form-control mt-3" placeholder="concepto" ></textarea>
 
   
   </form>

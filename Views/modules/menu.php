@@ -126,7 +126,7 @@
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="alumnosmostrar" class="menu-link">
+                  <a href="alumnos-mostrar" class="menu-link">
                     <div data-i18n="Notifications">Lista de alumnos</div>
                   </a>
                 </li>
@@ -141,12 +141,12 @@
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="pagos" class="menu-link" target="_blank">
+                  <a href="pagos" class="menu-link">
                     <div data-i18n="Basic">Registro</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="pagosmostrar" class="menu-link" target="_blank">
+                  <a href="pagos-mostrar" class="menu-link">
                     <div data-i18n="Basic">Mostrar</div>
                   </a>
                 </li>
