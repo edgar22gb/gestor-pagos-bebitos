@@ -57,7 +57,7 @@ if(isset($_SESSION['validar']) && $_SESSION['validar'] == true){
     if(isset($_GET["url"])){
      $url = explode("/", $_GET["url"]);
 
-     if($url[0] == "inicio" || $url[0] == "logout" || $url[0]=="pagos"|| $url[0]=="alumnos" || $url[0]=="alumnos.mostrar") 
+     if($url[0] == "inicio" || $url[0] == "logout" || $url[0]=="pagos"|| $url[0]=="alumnos" || $url[0]=="alumnosmostrar" || $url[0]=="pagosmostrar" || $url[0]=="bitacoraregistro" || $url[0]=="bitacorasmostrar") 
      {
          include 'modules/'.$url[0].'.php';
      }else if($url[0] == "crear"){

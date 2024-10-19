@@ -126,7 +126,7 @@
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="alumnos.mostrar" class="menu-link">
+                  <a href="alumnosmostrar" class="menu-link">
                     <div data-i18n="Notifications">Lista de alumnos</div>
                   </a>
                 </li>
@@ -146,7 +146,7 @@
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="auth-register-basic.html" class="menu-link" target="_blank">
+                  <a href="pagosmostrar" class="menu-link" target="_blank">
                     <div data-i18n="Basic">Mostrar</div>
                   </a>
                 </li>
@@ -160,12 +160,12 @@
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="pages-misc-error.html" class="menu-link">
+                  <a href="bitacoraregistro" class="menu-link">
                     <div data-i18n="Error">Registro</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="pages-misc-under-maintenance.html" class="menu-link">
+                  <a href="bitacorasmostrar" class="menu-link">
                     <div data-i18n="Under Maintenance">Mostrar</div>
                   </a>
                 </li>

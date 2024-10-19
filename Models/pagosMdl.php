@@ -4,10 +4,19 @@ include_once "conexion.php";
     
 
 class pagosMdl{
-    
-    static public funcion pagosMdl(){
+    //FUNCION  PARA REGISTRAR Y ELIMINAR
+
+    public static function registrar()
+    {
+
+    }
+    public static function eliminar()
+    {
         
     }
+
+    
+    
     
     }
 

@@ -1,3 +1,0 @@
-<h2>
-  LISTA DE ALUMNOS
-</h2>
