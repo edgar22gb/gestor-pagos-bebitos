@@ -1,6 +1,6 @@
 
         <?php
-        class alumnos.mostrarCtr{
+        class alumnosmostrarCtr{
             
         }
 
