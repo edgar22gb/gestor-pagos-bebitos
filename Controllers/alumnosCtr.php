@@ -11,6 +11,10 @@
                 {
 
                 }
+                public function editar()
+                {
+                        
+                }
                 
             
         }
