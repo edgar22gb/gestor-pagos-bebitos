@@ -40,6 +40,7 @@ $rutaLocal = Ruta::rutaCtr();
     <title>Bebitos</title>
 </head>
 <body>
+    
 <?php
 
 if(isset($_SESSION['validar']) && $_SESSION['validar'] == true){
@@ -57,7 +58,7 @@ if(isset($_SESSION['validar']) && $_SESSION['validar'] == true){
     if(isset($_GET["url"])){
      $url = explode("/", $_GET["url"]);
 
-     if($url[0] == "inicio" || $url[0] == "logout" || $url[0]=="pagos"|| $url[0]=="alumnos" || $url[0]=="alumnos-mostrar" || $url[0]=="pagos-mostrar" || $url[0]=="bitacoraregistro" || $url[0]=="bitacorasmostrar") 
+     if($url[0] == "inicio" || $url[0] == "logout" || $url[0]=="pagos"|| $url[0]=="alumnos" || $url[0]=="alumnos-mostrar" || $url[0]=="pagos-mostrar" || $url[0]=="bitacoraregistro" || $url[0]=="bitacorasmostrar" || $url[0]=="dashboard") 
      {
          include 'modules/'.$url[0].'.php';
      }else if($url[0] == "crear"){
@@ -70,6 +71,7 @@ if(isset($_SESSION['validar']) && $_SESSION['validar'] == true){
     </div>
     </div>
     ';
+    
     
     
 }else{
