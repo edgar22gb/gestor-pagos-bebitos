@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 15-10-2024 a las 16:49:51
+-- Tiempo de generación: 23-11-2024 a las 19:16:25
 -- Versión del servidor: 8.2.0
 -- Versión de PHP: 8.2.13
 
@@ -36,23 +36,17 @@ CREATE TABLE IF NOT EXISTS `alumnos` (
   `nombres` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `sexo` varchar(10) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `fecha_nacimiento` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
-  `id_grado` int NOT NULL,
-  `id_nivel` int NOT NULL,
+  `edad` varchar(20) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `grado` varchar(20) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `nivel` varchar(20) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `apellido_paternotutor` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `apellido_maternotutor` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `nombre_tutor` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `domicilio` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `id_grado` (`id_grado`),
-  KEY `id_nivel` (`id_nivel`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
-
---
--- Volcado de datos para la tabla `alumnos`
---
-
-INSERT INTO `alumnos` (`id`, `CURP`, `apellido_paterno`, `apellido_materno`, `nombres`, `sexo`, `fecha_nacimiento`, `id_grado`, `id_nivel`, `apellido_paternotutor`, `apellido_maternotutor`, `nombre_tutor`, `domicilio`) VALUES
-(1, 'GABE880722HGRRSD04', 'GARCIA', 'BASILIO', 'EDGAR', 'MASCULINO', '22-07-1988', 6, 3, 'GARCIA', 'MENDOZA', 'PEDRO', 'CONOCIDO');
+  `telefono_fijo` varchar(20) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `telefono_emergencia` varchar(20) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
 
 -- --------------------------------------------------------
 
@@ -162,13 +156,6 @@ INSERT INTO `usuarios` (`id`, `username`, `password`, `name`, `correo`) VALUES
 --
 -- Restricciones para tablas volcadas
 --
-
---
--- Filtros para la tabla `alumnos`
---
-ALTER TABLE `alumnos`
-  ADD CONSTRAINT `alumnos_ibfk_1` FOREIGN KEY (`id_grado`) REFERENCES `grados` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `alumnos_ibfk_2` FOREIGN KEY (`id_nivel`) REFERENCES `niveles` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
 -- Filtros para la tabla `grados`
