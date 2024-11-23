@@ -11,7 +11,7 @@
 
 <div class="container mt-3">
   
-  <h2>Registro de Alumnos-Lactantes</h2>
+  <h2>Registro de Alumnos-Preescolar</h2>
   <form action="" method="post">
     <div class="row">
       <div class="col-md-3">
@@ -48,6 +48,9 @@
   <label for="">Grado</label>
 <!--TOMAR LOS VALORES DE LA CONSULTA A LA TABLA GRADOS-->
   <select name="id_grado" id="" class="form-control mt-3">
+    <option value="1">Primero</option>
+    <option value="2">Segundo</option>
+    <option value="3">Tercero</option>
   </select>
 
   </div>  
@@ -56,7 +59,7 @@
 <label for="">Nivel</label>
   <!---TOMAR LOS VALORES DE LA CONSULTA A LA TABLA NIVELES-->
   <select name="id_nivel" id="" class="form-control mt-3">
-    <option value="1">Lactantes</option>
+    <option value="3">Preescolar</option>
   </select>
 
 </div>  <br><br>

@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <title></title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- 
- 
-</head>
 <body>
 <div class="container mt-3">
-<h2>Lista de alumnos inscritos durante el ciclo escolar</h2>
+<h2>Alumnos Registrados-Maternal</h2>
 
 
 <div class="table-sorting table-responsive">
@@ -28,6 +19,3 @@
                                     </thead>
                                     <tbody>
 </div>
-
-</body>
-</html>

@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <title>Registro</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- 
- 
-</head>
-<body>
+
 
 <div class="container mt-3">
   
@@ -29,7 +20,7 @@
    </div>
    <div class="col-md-3">
    <label for="">Nombre</label>
-   <input type="text" class="form-control mt-3" placeholder="Nombre" name="nombre">
+   <input type="text" class="form-control mt-3" placeholder="Nombres" name="nombres">
    </div>
    <div class="col-md-3">
    <label for="">Sexo</label>
@@ -44,10 +35,16 @@
   <input type="date" class="form-control mt-3" name="fecha_nacimiento" id="">
 
   </div>
+
+  <div class="col-md-3">
+  <label for="">Edad</label>
+  <input type="text" class="form-control mt-3" name="edad" id="">
+  </div>
   <div class="col-md-3">
   <label for="">Grado</label>
 <!--TOMAR LOS VALORES DE LA CONSULTA A LA TABLA GRADOS-->
   <select name="id_grado" id="" class="form-control mt-3">
+    <option value="1">Primero</option>
   </select>
 
   </div>  
@@ -100,10 +97,12 @@
              
             </div>
   </form>
-  
-    
-  
-</div>
 
-</body>
-</html>
+
+  <?php
+    $AlumnosLactantesCtr=new AlumnosLactantesCtr;
+    $AlumnosLactantesCtr->registrar_alumnos();
+  ?>
+    
+
+

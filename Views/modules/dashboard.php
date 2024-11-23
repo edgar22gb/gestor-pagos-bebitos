@@ -50,7 +50,7 @@
       <div class="panel panel-primary">
       <div class="card border-left-warning shadow h-100 py-2">
       <div class="panel-body"> <img class="card-img-top" src="img/slideshow/preescolar.png" alt="maternal" class="img-responsive" style="width:100%" alt="Image"></div>
-      <h4 class="card-title" style="text-align: center;"><b>Preescolar</h4></b>
+      <h4 class="card-title" style="text-align: center;"><b>PREESCOLAR</h4></b>
         <div class="h5 mb-0 font-weight-bold text-gray-800"><?php ?>Niños:</div><br>
               <div class="h5 mb-0 font-weight-bold text-gray-800"><?php ?>Niñas:</div><br>
               <div class="h5 mb-0 font-weight-bold text-gray-800"><?php ?>Total:</div>

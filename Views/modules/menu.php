@@ -120,11 +120,7 @@
                 <div data-i18n="Account Settings">Alumnos</div>
               </a>
               <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="alumnos" class="menu-link">
-                    <div data-i18n="Account">Registro</div>
-                  </a>
-                </li>
+                
                 <li class="menu-item">
                   <a href="alumnos-mostrar" class="menu-link">
                     <div data-i18n="Notifications">Lista de alumnos</div>
@@ -156,22 +152,92 @@
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-cube-alt"></i>
-                <div data-i18n="Misc">Bitacora de Asistencia</div>
+                <div data-i18n="Misc">Lactantes</div>
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="bitacoraregistro" class="menu-link">
-                    <div data-i18n="Error">Registro</div>
+                  <a href="AlumnosLactantes" class="menu-link">
+                    <div data-i18n="Error">Registrar Alumnos</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="bitacorasmostrar" class="menu-link">
+                  <a href="MostrarAlumnos-Lactantes" class="menu-link">
                     <div data-i18n="Under Maintenance">Mostrar</div>
                   </a>
                 </li>
+
+                
+
               </ul>
             </li>
 
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                <div data-i18n="Misc">Maternal</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="AlumnosMaternal" class="menu-link">
+                    <div data-i18n="Error">Registrar Alumnos</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="MostrarAlumnos-Maternal" class="menu-link">
+                    <div data-i18n="Under Maintenance">Mostrar</div>
+                  </a>
+                </li>
+
+                
+
+              </ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                <div data-i18n="Misc">Preescolar</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="AlumnosPreescolar" class="menu-link">
+                    <div data-i18n="Error">Registrar Alumnos</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="MostrarAlumnos-Preescolar" class="menu-link">
+                    <div data-i18n="Under Maintenance">Mostrar</div>
+                  </a>
+                </li>
+
+                
+
+              </ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                <div data-i18n="Misc">Docentes</div>
+              </a>
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="DocentesRegistro" class="menu-link">
+                    <div data-i18n="Error">Registrar Docentes</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="MostrarDocentes" class="menu-link">
+                    <div data-i18n="Under Maintenance">Mostrar</div>
+                  </a>
+                </li>
+
+                
+
+              </ul>
+            </li>
+            
+            
 
             <!-- Components 
             <li class="menu-header small text-uppercase"><span class="menu-header-text">Components</span></li>
