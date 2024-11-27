@@ -47,11 +47,25 @@
               }
             }
 
-            public static function consultaAlumnosMdl()
+            public static function consultaAlumnosPreescolarMdl()
             {
                 $sentencia=Conexion::conectar()->prepare("SELECT * FROM alumnos");
                 $sentencia->execute();
                 return $sentencia->fetchAll();
+
+            }
+            public static function editarAlumnosPreescolarlMdl($id)
+            {
+                $sentencia=Conexion::conectar()->prepare("UPDATE alumnos SET curp=:curp,apellido_paterno=:apellidoP,apellido_materno=:apellidoM,nombres=:nombres,sexo=:sexo,fecha_nacimiento=:fechaNac,edad=:edad,
+                grado=:Grado,nivel=:Nivel,apellido_paternotutor=:TutorApellidoP,apellido_maternotutor=:TutorApellidoM,nombre_tutor=:NombreTu,domicilio=:domicilio,telefono_fijo=:TelF,telefono_emergencia=:TelEM WHERE $id=:id");
+                $sentencia->execute();
+
+            }
+            public static function eliminarAlumnosPreescolarMdl($id)
+            {
+                $sentencia=Conexion::conectar()->prepare("DELETE FROM alumnos WHERE $id=:id");
+                $sentencia->execute();
+                
 
             }
                 

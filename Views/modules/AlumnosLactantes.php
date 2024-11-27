@@ -43,8 +43,8 @@
   <div class="col-md-3">
   <label for="">Grado</label>
 <!--TOMAR LOS VALORES DE LA CONSULTA A LA TABLA GRADOS-->
-  <select name="id_grado" id="" class="form-control mt-3">
-    <option value="1">Primero</option>
+  <select name="grado" id="" class="form-control mt-3">
+    <option value="PRIMERO">Primero</option>
   </select>
 
   </div>  
@@ -52,8 +52,8 @@
 <div class="col-md-3">
 <label for="">Nivel</label>
   <!---TOMAR LOS VALORES DE LA CONSULTA A LA TABLA NIVELES-->
-  <select name="id_nivel" id="" class="form-control mt-3">
-    <option value="1">Lactantes</option>
+  <select name="nivel" id="" class="form-control mt-3">
+    <option value="LACTANTES">Lactantes</option>
   </select>
 
 </div>  <br><br>

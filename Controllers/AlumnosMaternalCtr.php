@@ -26,9 +26,22 @@
         
                        }
         
-                       public static function mostrar_alumnos()
+                       public static function mostrar_alumnosMaternal()
                        {
-                        $respuesta =AlumnosLactantesMdl::consultaAlumnosMdl();
+                        $respuesta=AlumnosMaternalMdl::consultaAlumnosMaternalMdl();
+                        
+                        return $respuesta;
+                       }
+
+                       public static function editar_alumnosMaternal($id)
+                       {
+                       $respuesta=AlumnosMaternalMdl::editarAlumnosMaternalMdl($id);
+                       return $respuesta;
+
+                       }
+                       public static function eliminar_alumnosMaternal($id)
+                       {
+                        $respuesta=AlumnosMaternalMdl::eliminarAlumnosMaternalMdl($id);
                         return $respuesta;
                        }
             

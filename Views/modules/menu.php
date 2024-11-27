@@ -222,7 +222,7 @@
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="DocentesRegistro" class="menu-link">
+                  <a href="Docentes" class="menu-link">
                     <div data-i18n="Error">Registrar Docentes</div>
                   </a>
                 </li>

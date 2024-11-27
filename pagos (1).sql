@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 23-11-2024 a las 19:16:25
+-- Tiempo de generación: 27-11-2024 a las 14:09:38
 -- Versión del servidor: 8.2.0
 -- Versión de PHP: 8.2.13
 
@@ -45,24 +45,44 @@ CREATE TABLE IF NOT EXISTS `alumnos` (
   `domicilio` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `telefono_fijo` varchar(20) COLLATE utf8mb4_spanish2_ci NOT NULL,
   `telefono_emergencia` varchar(20) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `status` varchar(20) COLLATE utf8mb4_spanish2_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `bitacoras`
+-- Estructura de tabla para la tabla `docentes`
 --
 
-DROP TABLE IF EXISTS `bitacoras`;
-CREATE TABLE IF NOT EXISTS `bitacoras` (
+DROP TABLE IF EXISTS `docentes`;
+CREATE TABLE IF NOT EXISTS `docentes` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `id_estudiante` int NOT NULL,
-  `fecha_ingreso` date NOT NULL,
-  `tipo_ingreso` varchar(30) COLLATE utf8mb4_spanish2_ci NOT NULL,
-  `hora_ingreso` timestamp NOT NULL,
+  `clave_docente` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `nombre_docente` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `primer_apellido` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `segundo_apellido` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `sexo` varchar(20) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `domicilio` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `nombre_colonia` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `codigo_postal` int NOT NULL,
+  `entidad` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `municipio` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `localidad` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `fecha_ingreso` varchar(30) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `preparacion_profesional` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `funcion` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `docentes`
+--
+
+INSERT INTO `docentes` (`id`, `clave_docente`, `nombre_docente`, `primer_apellido`, `segundo_apellido`, `sexo`, `domicilio`, `nombre_colonia`, `codigo_postal`, `entidad`, `municipio`, `localidad`, `fecha_ingreso`, `preparacion_profesional`, `funcion`) VALUES
+(1, 'GABE', 'EDGAR', 'GARCIA', 'BASILIO', 'Hombre', 'CONOCIDO', 'LAZARO CARDENAS', 40660, 'GUERRERO', 'PUNGARABATO', 'CIUDAD ALTAMIRANO', '2024-11-25', 'ING. EN SISTEMAS', 'APOYO ADMINISTRATIVO'),
+(2, 'ALBERTO', 'CARLOS', 'ALBERTO', 'NUÑEZ', 'Hombre', 'CONOCIDO', 'SIN NOMBRE', 40662, 'GUERRERO', 'TANGANHUATO', 'CIUDAD ALTAMIRANO', '2024-11-25', 'ING. EN SISTEMAS', 'APOYO ADMINISTRATIVO'),
+(3, 'ELCANJ', 'ISAMARA', 'LEON', 'RUEDA', 'Mujer', 'CONOCIDO', 'SIN NOMBRE', 40660, 'GUERRERO', 'COYUCA DE CATALAN', 'COYUCA DE CATALAN', '2024-11-25', 'ING. EN SISTEMAS', 'APOYO ADMINISTRATIVO');
 
 -- --------------------------------------------------------
 
@@ -73,23 +93,18 @@ CREATE TABLE IF NOT EXISTS `bitacoras` (
 DROP TABLE IF EXISTS `grados`;
 CREATE TABLE IF NOT EXISTS `grados` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `grado` varchar(10) COLLATE utf8mb4_spanish2_ci NOT NULL,
-  `id_nivel` int NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `id_nivel` (`id_nivel`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
+  `nombre_grado` varchar(50) COLLATE utf8mb4_spanish2_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
 
 --
 -- Volcado de datos para la tabla `grados`
 --
 
-INSERT INTO `grados` (`id`, `grado`, `id_nivel`) VALUES
-(1, 'PRIMERO', 1),
-(2, 'PRIMERO', 2),
-(3, 'SEGUNDO', 2),
-(4, 'PRIMERO', 3),
-(5, 'SEGUNDO', 3),
-(6, 'TERCERO', 3);
+INSERT INTO `grados` (`id`, `nombre_grado`) VALUES
+(1, 'PRIMERO'),
+(2, 'SEGUNDO'),
+(3, 'TERCERO');
 
 -- --------------------------------------------------------
 
@@ -156,12 +171,6 @@ INSERT INTO `usuarios` (`id`, `username`, `password`, `name`, `correo`) VALUES
 --
 -- Restricciones para tablas volcadas
 --
-
---
--- Filtros para la tabla `grados`
---
-ALTER TABLE `grados`
-  ADD CONSTRAINT `grados_ibfk_1` FOREIGN KEY (`id_nivel`) REFERENCES `niveles` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 --
 -- Filtros para la tabla `pagos`

@@ -11,10 +11,15 @@ include_once "Controllers/templateCtr.php";
 include_once "Controllers/rutaCtr.php";
 include_once "Controllers/loginCtr.php";
 include_once "Controllers/AlumnosLactantesCtr.php";
+include_once "Controllers/DocentesCtr.php";
+
+
 
 // Modelos
 include_once "Models/loginMdl.php";
 include_once "Models/AlumnosLactantesMdl.php";
+include_once "Models/DocentesMdl.php";
+
 
 $template = new Template();
 $template->templateCtr();

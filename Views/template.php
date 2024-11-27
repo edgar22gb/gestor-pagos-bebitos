@@ -58,7 +58,7 @@ if(isset($_SESSION['validar']) && $_SESSION['validar'] == true){
     if(isset($_GET["url"])){
      $url = explode("/", $_GET["url"]);
 
-     if($url[0] == "inicio" || $url[0] == "logout" || $url[0]=="pagos"|| $url[0]=="alumnos" || $url[0]=="alumnos-mostrar" || $url[0]=="pagos-mostrar" || $url[0]=="bitacoraregistro" || $url[0]=="bitacorasmostrar" || $url[0]=="dashboard" || $url[0]=="AlumnosMaternal"|| $url[0]=="AlumnosPreescolar"|| $url[0]=="AlumnosLactantes" || $url[0]=="MostrarAlumnos-Lactantes"|| $url[0]=="MostrarAlumnos-Maternal"|| $url[0]=="MostrarAlumnos-Preescolar"|| $url[0]=="DocentesRegistro"|| $url["0"]=="MostrarDocentes") 
+     if($url[0] == "inicio" || $url[0] == "logout" || $url[0]=="pagos"|| $url[0]=="alumnos" || $url[0]=="alumnos-mostrar" || $url[0]=="pagos-mostrar" || $url[0]=="bitacoraregistro" || $url[0]=="bitacorasmostrar" || $url[0]=="dashboard" || $url[0]=="AlumnosMaternal"|| $url[0]=="AlumnosPreescolar"|| $url[0]=="AlumnosLactantes" || $url[0]=="MostrarAlumnos-Lactantes"|| $url[0]=="MostrarAlumnos-Maternal"|| $url[0]=="MostrarAlumnos-Preescolar"|| $url[0]=="Docentes"|| $url[0]=="MostrarDocentes" || $url[0]=="editar-docentes") 
      {
          include 'modules/'.$url[0].'.php';
      }else if($url[0] == "crear"){

@@ -27,7 +27,21 @@
         
                        public static function mostrar_alumnos()
                        {
-                        $respuesta =AlumnosLactantesMdl::consultaAlumnosMdl();
+                        $respuesta=AlumnosPreescolarMdl::consultaAlumnosPreescolarMdl();
+                        return $respuesta;
+                       }
+
+                       
+
+                       public static function editar_alumnosPreescolar($id)
+                       {
+                       $respuesta=AlumnosPreescolarMdl::editarAlumnosPreescolarlMdl($id);
+                       return $respuesta;
+
+                       }
+                       public static function eliminar_alumnosPreescolar($id)
+                       {
+                        $respuesta=AlumnosPreescolarMdl::eliminarAlumnosPreescolarMdl($id);
                         return $respuesta;
                        }
 
